@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zulkifli - Bio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a0a;
+  background-image: radial-gradient(circle at 20% 80%, #1a1a2e 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, #16213e 0%, transparent 50%);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+.card {
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 50px 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
+  animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00d4ff;
+  margin: 0 auto 25px;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(-10px); }
+}
+h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; color: #fff; }
+.tagline { font-size: 16px; color: #00d4ff; margin-bottom: 25px; font-weight: 600; }
+.bio { font-size: 16px; line-height: 1.8; color: #ccc; margin-bottom: 30px; }
+.links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.links a {
+  padding: 12px 25px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+.links a:hover {
+  background: rgba(0, 212, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 212, 255, 0.4);
+  color: #fff;
+}
+.footer { margin-top: 30px; font-size: 12px; color: #555; }
+</style>
+</head>
+<body>
+<div class="card">
+  <img src="https://files.catbox.moe/q22n56.png" alt="Foto Zulkifli" class="avatar">
+  <h1>Zulkifli</h1>
+  <p class="tagline">Siswa SMA 2 Singkep | Editor | Wibu</p>
+  <p class="bio">
+    Halo! Gue Zulkifli.<br>
+    Umur 19 tahun, sekolah di SMA 2 Singkep.<br><br>
+    Suka ngedit, nonton anime, sama rebahan seharian 😎<br>
+    Motto hidup: "Bukan korban. Bukan pahlawan.<br>
+    Hanya seorang anak yang memilih berbeda,<br>
+    di tempat yang memaksa semua orang sama."
+  </p>
+  <div class="links">
+    <a href="https://instagram.com/izullfrshi" target="_blank">📸 Instagram</a>
+    <a href="https://wa.me/6282173816285" target="_blank">💬 WhatsApp</a>
+  </div>
+  <p class="footer">© 2026 Zulkifli.</p>
+</div>
+</body>
+</html>
